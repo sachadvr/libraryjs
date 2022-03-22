@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Bibliotheque</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#" id="lien1">Bibliothèque de jeux</a></li>
+
+      </ul>
+    </nav>
+
+    <div id="container">
+      <form>
+        <fieldset>
+          <legend>Formulaire</legend>
+          <span>Image</span><input type="url" /><br />
+          <span>Nom jeu</span><input type="text" /><br />
+          <span>Créateur</span><input type="text" /><br />
+          <span>Durée</span><input type="time" /><br />
+          <span>Date de sortie</span><input type="date" /><br />
+          <span>Nombre de j/max</span><input type="number" /><br />
+          <span>Age minimum</span><input type="number" /><br />
+          <span>Genre</span><input type="text" /><br />
+
+          <a href="#" onclick="submit()">Submit</a>
+        </fieldset>
+      </form>
+      <main>
+        <div id="searchbarcontainer">
+          <label for="search">Rechercher un livre : </label
+          ><input type="search" name="search" id="searchbar" />
+        </div>
+        <div id="btns">
+          <a href="javascript:void(0)" onclick="">#une image</a>
+          <a href="javascript:void(0)" onclick="sort('nom')">Trier par Nom</a>
+          <a href="javascript:void(0)" onclick="sort('createur')">Createur</a>
+          <a href="javascript:void(0)" onclick="sort('duree')">Durée</a>
+          <a href="javascript:void(0)" onclick="sort('date')">Date de sortie</a>
+          <a href="javascript:void(0)" onclick="sort('nombrej')"
+            >Nombre de j/max</a
+          >
+          <a href="javascript:void(0)" onclick="sort('age')">Age</a>
+          <a href="javascript:void(0)" onclick="sort('genre')">Genre</a>
+        </div>
+        <table></table>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

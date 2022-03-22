@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* transition: all 0.5s ease-in-out; */
+}
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Syne", sans-serif;
+  width: 100vw;
+  overflow: scroll;
+}
+
+legend {
+  font-weight: 800;
+}
+form > * {
+  padding: 1rem;
+}
+form {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 2rem; */
+  /* margin: auto; */
+}
+input {
+  flex: 1;
+}
+
+fieldset a {
+  background: rgb(149, 215, 149);
+  color: white;
+  padding: 8px;
+  margin-top: 1rem;
+  border-radius: 30px;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+}
+input {
+  margin: 0.2rem;
+  border-radius: 20px;
+  outline: 0;
+  border: 1px solid black;
+  padding: 0.2rem 0.5rem;
+}
+
+tr {
+  display: flex;
+  gap: 5px  ;
+  flex-wrap: no-wrap;
+}
+td {
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  max-height: 100px;
+  flex: 1;
+  padding: 1rem;
+  margin: 0.2rem;
+
+  overflow: scroll;
+  background: rgb(235, 235, 235);
+}
+
+.delete {
+  display: inline-block;
+  color: red;
+}
+
+body {
+  background: rgb(190, 240, 210);
+}
+
+table {
+  background: white;
+  cursor: pointer;
+  margin: auto;
+  max-width: 80rem;
+  width: 100%;
+  overflow: scroll;
+}
+
+#btns {
+  display: flex;
+  gap: 5px;
+  max-width: 80rem;
+  width: 100%;
+  margin: auto;
+  overflow: scroll;
+}
+#btns a {
+  background: rgb(77, 200, 118);
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+}
+#btns > * {
+  flex: 1;
+}
+img {
+  width: 100%;
+}
+#searchbarcontainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+}
+nav {
+  overflow: hidden;
+  background: white;
+  border-bottom: 5px solid black; 
+}
+ul {
+  display: flex;
+
+  flex-direction: row;
+  list-style-type: none;
+  padding: 2rem;
+  gap: 5rem;
+  justify-content: space-evenly;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#container {
+  display: flex;
+  overflow: scroll;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: rgb(255,255,255,0.8);
+  min-height: 85vh;
+  transition: all 1s ease-in-out;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  max-height: 40rem;
+  overflow: scroll;
+  margin-left: auto;
+  margin-top: 1rem;
+  margin-right: auto;
+}
+main {
+  flex: 1;
+  padding: 2rem;
+  display: grid;
+  margin: auto;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+dialog {
+  width: 80%;
+  margin: auto;
+  height: 80%;
+  animation: appear 1s ease-in-out;
+}
