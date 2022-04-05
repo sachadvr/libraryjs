@@ -93,7 +93,8 @@ function filter(e, filterdata) {
 }
 function htmlupdate(e, i) {
   if (e.url === undefined || e.url.length === 0) {
-    e.url = "https://www.themeta.news/wp-content/themes/meta/img/noimage.jpg";
+    e.url =
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png";
   }
   let x = `<a href="javascript:void(0)" class="delete" data-id="${i}" onclick="del(this)">Supprimer la ligne</a>`;
   $("table")[0].innerHTML +=
